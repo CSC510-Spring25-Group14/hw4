@@ -19,6 +19,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Run commands
+    - name: Run Task 2
       shell: bash
-      run: task1.sh
+      run: task2.sh
