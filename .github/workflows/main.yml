@@ -19,11 +19,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Run Task 2
-      run: |
-        pwd
-        ls -la
-        sh task2.sh
 
     - name: Run Task 1
       run: |
@@ -35,3 +30,9 @@ jobs:
         else
           exit $exit_code
         fi
+
+    - name: Run Task 2
+      run: |
+        pwd
+        ls -la
+        sh task2.sh
