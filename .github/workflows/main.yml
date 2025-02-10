@@ -20,6 +20,5 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Run commands
-      run: |
-        sh task1.sh 2>&1
-        sh task2.sh 2>&1
+      shell: bash
+      run: task1.sh 2>&1
