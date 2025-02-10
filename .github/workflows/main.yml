@@ -20,5 +20,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Run Task 2
-      shell: bash
-      run: task2.sh
+      run: |
+        pwd
+        ls -la
+        sh task2.sh
