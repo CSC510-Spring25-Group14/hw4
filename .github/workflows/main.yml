@@ -24,3 +24,7 @@ jobs:
         pwd
         ls -la
         sh task2.sh
+
+    - name: Run Task 1
+      run: |
+        sh task1.sh
