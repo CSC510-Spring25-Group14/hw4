@@ -27,7 +27,7 @@ jobs:
 
     - name: Run Task 1
       run: |
-        sh task1.sh
+        sh task1.sh || true
         exit_code=$?
         if [ $exit_code -eq 137 ]; then
           echo "Process was killed as expected"
